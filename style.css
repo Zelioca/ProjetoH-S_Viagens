@@ -90,14 +90,14 @@ h1 {
     text-shadow: 3px 3px 3px rgba(0, 0, 255, 0.8);
 }
 
-#destination-card {
+#destino {
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
     align-items: center;
 }
 
-#destination-card img {
+#destino img {
     width: 250px;
     height: 150px;
     object-fit: cover;
