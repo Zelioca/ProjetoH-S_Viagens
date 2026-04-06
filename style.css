@@ -3,24 +3,39 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #B3E5FC;
+    background-color: #599ff5;
 }
 
 #header {
-    background-color: #C1121F;
+    background-color: #156998;
     color: white;
     padding: 15px 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 #logo-area {
-    display: flex;
     align-items: center;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
+#logo-area p {
+    margin: 0;
+    font-size: 50px;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#menu {
+    background-color: #0c0044;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;
+}
 #menu a {
     color: white;
     text-decoration: underline;
@@ -122,7 +137,7 @@ h1 {
 }
 
 #footer {
-    background-color: #C1121F;
+    background-color: #156998;
     color: white;
     padding: 40px 10%;
     display: grid;
