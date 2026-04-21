@@ -143,17 +143,15 @@ h1 {
 
 }
 
+#info h1 {
+    color: white;
+}
+
 #info h2 {
     margin: 0;
     font-weight: normal;
     font-size: 26px;
-    color: white;
-}
-
-#info p {
-    margin: 5px 0;
     color: #CCC;
-
 }
 
 #preco {
