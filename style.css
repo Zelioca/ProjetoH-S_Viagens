@@ -147,11 +147,13 @@ h1 {
     margin: 0;
     font-weight: normal;
     font-size: 26px;
+    color: white;
 }
 
 #info p {
     margin: 5px 0;
-    color: #666;
+    color: #CCC;
+
 }
 
 #preco {
