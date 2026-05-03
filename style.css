@@ -107,6 +107,7 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
+
 #carrosel-item img:hover {
     transition: transform 0.5s ease;
     transform: scale(120%);
@@ -174,7 +175,13 @@ h1 {
 
 
 /*Pagina Turismo*/
-#busca-turismo  {
+
+#main-turismo h2 {
+    text-align: center;
+    color: black;
+}
+
+#busca-turismo {
     width: 75%;
     height: 75px;
     display: flex;
@@ -185,7 +192,7 @@ h1 {
     background-color: blue;
 }
 
-#busca-turismo select {
+#busca-turismo input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -193,12 +200,34 @@ h1 {
     text-align: center;
 }
 
-#origem-turismo select, #destino-turismo select  {
+#origem-turismo input,
+#destino-turismo input {
     width: 250px;
+    height: 40px;
 }
 
-#data-turismo select {
+#origem-turismo input::placeholder,
+#destino-turismo input::placeholder {
+    color: black;
+}
+
+#data-turismo input {
     width: 350px;
+    height: 40px;
+}
+
+#escolha-turismo {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: #1579f8;
+}
+
+#escolha-turismo img {
+    justify-content: center;
+    margin: 10px;
+    float: left;
+    width: 100px;
+    height: 80px;
 }
 
 /*Rodape*/
