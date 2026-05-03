@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <script src="./script.js"></script>
+    
 </head>
 
 <body>
@@ -30,10 +30,13 @@
             </form>
         </div>
     </div>
-    <div id="busca-turismo">
-        <div id="origem-turismo">
-            <select name="" id="">
-                <option value="base" disabled selected>Origem</option>
+
+
+    <div id="main-turismo">
+        <h2>Escolha sua configuração</h2>
+        <div id="busca-turismo">
+
+            <datalist id="opcoes">
                 <option value="AJU">AJU - Aracaju</option>
                 <option value="BEL">BEL - Belém</option>
                 <option value="CNF">CNF - Belo Horizonte</option>
@@ -61,46 +64,75 @@
                 <option value="GRU">GRU - São Paulo</option>
                 <option value="THE">THE - Teresina</option>
                 <option value="VIX">VIX - Vitória</option>
-            </select>
-        </div>
-        <div id="destino-turismo">
-            <select name="" id="">
-                <option value="base" disabled selected>Destino</option>
-                <option value="AJU">AJU - Aracaju</option>
-                <option value="BEL">BEL - Belém</option>
-                <option value="CNF">CNF - Belo Horizonte</option>
-                <option value="BVB">BVB - Boa Vista</option>
-                <option value="BSB">BSB - Brasília</option>
-                <option value="CGR">CGR - Campo Grande</option>
-                <option value="CGB">CGB - Cuiabá</option>
-                <option value="CWB">CWB - Curitiba</option>
-                <option value="FLN">FLN - Florianópolis</option>
-                <option value="FOR">FOR - Fortaleza</option>
-                <option value="GYN">GYN - Goiânia</option>
-                <option value="JPA">JPA - João Pessoa</option>
-                <option value="MCP">MCP - Macapá</option>
-                <option value="MCZ">MCZ - Maceió</option>
-                <option value="MAO">MAO - Manaus</option>
-                <option value="NAT">NAT - Natal</option>
-                <option value="PMW">PMW - Palmas</option>
-                <option value="POA">POA - Porto Alegre</option>
-                <option value="PVH">PVH - Porto Velho</option>
-                <option value="REC">REC - Recife</option>
-                <option value="RBR">RBR - Rio Branco</option>
-                <option value="GIG">GIG - Rio de Janeiro</option>
-                <option value="SSA">SSA - Salvador</option>
-                <option value="SLZ">SLZ - São Luís</option>
-                <option value="GRU">GRU - São Paulo</option>
-                <option value="THE">THE - Teresina</option>
-                <option value="VIX">VIX - Vitória</option>
-            </select>
-        </div>
-        <div id="data-turismo">
-            <select name="" id="">
-                <option value="base" hidden>Data</option>
-            </select>
+            </datalist>
+            <div id="origem-turismo">
+                <input id="input-origem" list="opcoes" placeholder="Origem">
+            </div>
+            <div id="destino-turismo">
+                <input id="input-destino" list="opcoes" placeholder="Destino">
+            </div>
+            <div id="data-turismo">
+                <input id="input-data" type="date">
+            </div>
         </div>
     </div>
-</body>
 
+    <div id="opcoes-turismo" hidden>
+        <div id="escolha-turismo">
+            <img src="./images/aleatorias/1.jpg" id="imagem-turismo">
+            <h2><span id="opcao1">Opçao1</span>-<span id="opcao2">Opçao2</span></h2>
+            <p>Preço de R$<span id="preco1">x</span> a R$<span id="preco2">y</span></p>
+            <p>Viagem de Ida e volta</p>
+        </div>
+        <div id="escolha-turismo">
+            <img src="./images/aleatorias/2.jpg" id="imagem-turismo">
+            <h2><span id="opcao1">Opçao1</span>-<span id="opcao2">Opçao2</span></h2>
+            <p>Preço de R$<span id="preco1">x</span> a R$<span id="preco2">y</span></p>
+            <p>Viagem de Ida e volta</p>
+        </div>
+        <div id="escolha-turismo">
+            <img src="./images/aleatorias/3.jpg" id="imagem-turismo">
+            <h2><span id="opcao1">Opçao1</span>-<span id="opcao2">Opçao2</span></h2>
+            <p>Preço de R$<span id="preco1">x</span> a R$<span id="preco2">y</span></p>
+            <p>Viagem de Ida</p>
+        </div>
+        <div id="escolha-turismo">
+            <img src="./images/aleatorias/4.jpg" id="imagem-turismo">
+            <h2><span id="opcao1">Opçao1</span>-<span id="opcao2">Opçao2</span></h2>
+            <p>Preço de R$<span id="preco1">x</span> a R$<span id="preco2">y</span></p>
+            <p>Viagem de Ida</p>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <img src="./images/logo.png" alt="logo" width="90px"><br>
+            <strong>VIAGENS H&S</strong>
+            <p id="copyright">© CR - 2026<br>Viagens H&S<br><br>Todos os direitos reservados</p>
+        </div>
+        <div>
+            <h3>Principais Voo</h3>
+            <ul>
+                <li>Inglaterra</li>
+                <li>Moscow</li>
+                <li>Tóquio</li>
+                <li>New York</li>
+                <li>Atlanta</li>
+                <li>Reino Cogumelo</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contatos</h3>
+            <p>Telefone: 4002-8922</p>
+            <p>Email: H&SViagens@gmail.com</p>
+            <p>Servidor Discord: Projeto H&S</p>
+        </div>
+        <div>
+            <h3>Sobre nós</h3>
+            <p>Uma pequena empresa criada por dois pilotos com foco em transporte de mercadorias aéreas, trabalhando
+                por
+                todo sul do país.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
 </html>
